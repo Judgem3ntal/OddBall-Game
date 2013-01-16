@@ -28,7 +28,7 @@
 /*  31 */     this.midiPlayer = midiPlayer;
 /*     */     try
 /*     */     {
-/*  34 */       Enumeration e = getClass().getClassLoader().getResources("com.brackeen.javagamebook.state.ResourceManager");
+/*  34 */       Enumeration e = getClass().getClassLoader().getResources("com.katie.game.state.ResourceManager");
 /*  35 */       while (e.hasMoreElements())
 /*  36 */         System.out.println(e.nextElement());
 /*     */     }
