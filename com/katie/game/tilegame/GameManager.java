@@ -16,7 +16,7 @@
 /*     */ 
 /*     */ public class GameManager extends GameCore
 /*     */ {
-/*  19 */   static final Logger log = Logger.getLogger("com.brackeen.javagamebook.tilegame");
+/*  19 */   static final Logger log = Logger.getLogger("com.katie.game.tilegame");
 /*     */ 
 /*  27 */   private static final AudioFormat PLAYBACK_FORMAT = new AudioFormat(44100.0F, 16, 1, true, false);
 /*     */   private MidiPlayer midiPlayer;
