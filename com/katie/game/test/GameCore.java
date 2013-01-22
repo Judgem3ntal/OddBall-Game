@@ -21,7 +21,9 @@
 /*  22 */     new DisplayMode(640, 480, 24, 0), 
 /*  23 */     new DisplayMode(1024, 768, 16, 0), 
 /*  24 */     new DisplayMode(1024, 768, 32, 0), 
-/*  25 */     new DisplayMode(1024, 768, 24, 0) };
+/*  25 */     new DisplayMode(1024, 768, 24, 0) },
+/*     */     new DisplayMode(1280, 720, 24, 0),
+/*     */     new DisplayMode(1920, 1080, 24, 0);
 /*     */   private boolean isRunning;
 /*     */   protected ScreenManager screen;
 /*     */ 
