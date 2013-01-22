@@ -8,6 +8,7 @@
 /*     */ import com.katie.game.tilegame.sprites.Fly;
 /*     */ import com.katie.game.tilegame.sprites.Ground;
 /*     */ import com.katie.game.tilegame.sprites.Player;
+/*     */ import com.katie.game.tilegame.sprites.Plant;
 /*     */ import com.katie.game.tilegame.sprites.PowerUp.Goal;
 /*     */ import com.katie.game.tilegame.sprites.PowerUp.Music;
 /*     */ import com.katie.game.tilegame.sprites.PowerUp.Star;
@@ -29,6 +30,7 @@
 /*     */   private Sprite goalSprite;
 /*     */   private Sprite grubSprite;
 /*     */   private Sprite flySprite;
+/*     */   private Sprite plantSprite;
 /*     */ 
 /*     */   public TileGameResourceManager(GraphicsConfiguration gc, SoundManager soundManager, MidiPlayer midiPlayer)
 /*     */   {
@@ -131,6 +133,9 @@
 /* 143 */         else if (ch == '2') {
 /* 144 */           addSprite(newMap, this.flySprite, x, y);
 /*     */         }
+/*     */         else if (ch == '3') {
+/*     */           addSprite(newMap, this.plantSprite, x, y);
+/*     */         }
 /*     */       }
 /*     */ 
 /*     */     }
@@ -183,6 +188,9 @@
 /* 208 */     Image[][] images = new Image[4][];
 /*     */ 
 /* 211 */     images[0] = { 
+/*     */       loadImage("plant1.png"),
+/*     */       loadImage("plant2.png"),
+/*     */       loadImage("plant3.png"),
 /* 212 */       loadImage("player1.png"), 
 /* 213 */       loadImage("player2.png"), 
 /* 214 */       loadImage("player3.png"), 
@@ -207,6 +215,7 @@
 /* 235 */     Animation[] playerAnim = new Animation[4];
 /* 236 */     Animation[] flyAnim = new Animation[4];
 /* 237 */     Animation[] grubAnim = new Animation[4];
+/*     */     Animation[] plantAnim = new Animation[4];
 /* 238 */     for (int i = 0; i < 4; i++) {
 /* 239 */       playerAnim[i] = createPlayerAnim(
 /* 240 */         images[i][0], images[i][1], images[i][2]);
@@ -214,6 +223,7 @@
 /* 242 */         images[i][3], images[i][4], images[i][5]);
 /* 243 */       grubAnim[i] = createGrubAnim(
 /* 244 */         images[i][6], images[i][7]);
+/*     */       plantAnim = createPlantAnim(images[i])
 /*     */     }
 /*     */ 
 /* 248 */     this.playerSprite = 
