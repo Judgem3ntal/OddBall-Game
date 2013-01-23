@@ -223,7 +223,7 @@
 /* 242 */         images[i][3], images[i][4], images[i][5]);
 /* 243 */       grubAnim[i] = createGrubAnim(
 /* 244 */         images[i][6], images[i][7]);
-/*     */       plantAnim = createPlantAnim(images[i])
+/*     */       plantAnim = createPlantAnim(images[i][8], images[i][9], images[i][10]);
 /*     */     }
 /*     */ 
 /* 248 */     this.playerSprite = 
@@ -235,6 +235,9 @@
 /* 252 */     this.grubSprite = 
 /* 253 */       new Ground(grubAnim[0], grubAnim[1], 
 /* 253 */       grubAnim[2], grubAnim[3]);
+/*     */     this.plantSpirte =
+/*     */      new Plant(plantAnim[0], plantAnim[1],
+/*     */
 /*     */   }
 /*     */ 
 /*     */   private Animation createPlayerAnim(Image player1, Image player2, Image player3)
