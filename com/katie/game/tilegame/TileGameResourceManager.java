@@ -237,9 +237,14 @@
 /* 253 */       grubAnim[2], grubAnim[3]);
 /*     */     this.plantSpirte =
 /*     */      new Plant(plantAnim[0], plantAnim[1],
+/*     */      plantAnim[2], plantAnim[3]);
 /*     */
 /*     */   }
 /*     */ 
+/*     */   private Animation createPlantAnim(Image plant1, Image plant2, Image plant3) {
+/*     */    Animation anim = new Animation();
+              anim.addFrame(plant1, )
+}
 /*     */   private Animation createPlayerAnim(Image player1, Image player2, Image player3)
 /*     */   {
 /* 260 */     Animation anim = new Animation();
